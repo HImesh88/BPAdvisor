@@ -1,0 +1,96 @@
+/* Background and Heart Image */
+.heartcont {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.575);
+  z-index: -1;
+}
+
+.heartcont img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  opacity: 0.4;
+  animation: heartbeat 1s ease 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+}
+
+@media(max-width: 600px) {
+  .heartcont img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* Form Container Styling */
+.form-container {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2 );
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields Styling */
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #FF0000;
+}
+
+/* Button Styling */
+.test-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.test-button:hover {
+  background-color: #cc0000;
+}
+
+/* Advice Section Styling */
+.Advice {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
