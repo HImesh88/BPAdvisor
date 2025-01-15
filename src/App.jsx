@@ -40,7 +40,7 @@ const App = () => {
     return (
       <div className="">
         <div className="heartcont">
-          <img src="public/favbg.png" alt="" />
+          <img src="./public/favbg.png" alt="" />
         </div>
         <div className="form-container">
           <div>
